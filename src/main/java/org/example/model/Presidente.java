@@ -44,4 +44,11 @@ public class Presidente {
     public void setPartido(String partido) {
         this.partido = partido;
     }
+
+    public Presidente(String id, String nome, String idade, String partido) {
+        this.id = id;
+        this.nome = nome;
+        this.idade = idade;
+        this.partido = partido;
+    }
 }
