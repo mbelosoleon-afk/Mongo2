@@ -17,8 +17,8 @@ public class PresidenteService {
         this.presidenteRepo = presidenteRepository;
     }
 
-    public void crearPresi(Presidente p){
-        presidenteRepo.save(p);
+    public void crearPresi(Presidente presidente){
+        presidenteRepo.save(presidente);
     }
 
     public List<Presidente> buscarPresi(){
