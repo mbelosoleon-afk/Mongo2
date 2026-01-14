@@ -1,10 +1,13 @@
 package org.example.controller;
 
 import org.example.model.Pais;
+import org.example.model.Presidente;
 import org.example.service.PaisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(RestPais.MAPPING)
@@ -17,6 +20,11 @@ public class RestPais {
 
     public void gardarPais(Pais pais){
         paisService.crearPais(pais);
+    }
+
+    public List<Pais> listarPais() {
+        List <Pais> paises = paisService.buscarPais();
+        return paises;
     }
 
 }

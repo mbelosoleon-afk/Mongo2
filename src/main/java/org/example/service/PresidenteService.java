@@ -17,12 +17,20 @@ public class PresidenteService {
         this.presidenteRepo = presidenteRepository;
     }
 
-    public void crearPresi(Presidente presidente){
+    public void crearOActualizarPresi(Presidente presidente){
         presidenteRepo.save(presidente);
     }
 
-    public List<Presidente> buscarPresi(){
+    public List<Presidente> buscarTodosPresi(){
         return presidenteRepo.findAll();
+    }
+
+    public Presidente buscarPresi(String id) {
+        return presidenteRepo.findById(id).orElse(null);
+    }
+
+    public void borrarPresis(){
+        presidenteRepo.deleteAll();;
     }
 
 }

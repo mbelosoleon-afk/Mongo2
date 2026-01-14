@@ -56,11 +56,7 @@ public class Pais {
         this.idPresi = idPresi;
     }
 
-    public Pais(String id, String nome, String organizacion, ArrayList<String> partido, String idPresi) {
-        this.id = id;
-        this.nome = nome;
-        this.organizacion = organizacion;
-        this.partido = partido;
-        this.idPresi = idPresi;
+    public Pais(){
+
     }
 }
