@@ -27,4 +27,8 @@ public class RestPais {
         return paises;
     }
 
+    public void borrarPaises() {
+        paisService.borrarPaises();
+    }
+
 }

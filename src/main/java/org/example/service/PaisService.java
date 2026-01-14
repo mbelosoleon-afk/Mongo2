@@ -30,4 +30,8 @@ public class PaisService {
         return paisRepo.findById(id).orElse(null);
     }
 
+    public void borrarPaises(){
+        paisRepo.deleteAll();;
+    }
+
 }

@@ -65,7 +65,7 @@ public class Secuencia {
         System.out.println("Execución Exercicio 3");
 
         System.out.println("Modificanco presi...");
-        /*Presidente presidente = presidenteService.buscarPresi("");
+        /*Presidente presidente = presidenteService.buscarPresi("1");
         presidente.setNome("Pepe");
         presidenteService.crearOActualizarPresi(presidente);*/
 
@@ -75,23 +75,9 @@ public class Secuencia {
         System.out.println("Execución Exercicio 4");
 
         System.out.println("Borrando...");
-        restPresidente.borrarPresis();
+        //restPresidente.borrarPresis();
+        //restPais.borrarPaises();
 
         System.out.println("FIN Exercicio 4");
-
-        // 5
-        System.out.println("Execución Exercicio 5");
-
-        System.out.println("FIN Exercicio 5");
-
-        // 6
-        System.out.println("Execución Exercicio 6");
-
-        System.out.println("FIN Exercicio 6");
-
-        // 7
-        System.out.println("Execución Exercicio 7");
-
-        System.out.println("FIN Exercicio 7");
     }
 }
